@@ -19,6 +19,7 @@ public class starPatterns {
 		star13();
 		star14();
 		star15();
+		diamond();
 	}
 
 //	*
@@ -108,12 +109,12 @@ public class starPatterns {
 			System.out.println();
 		}
 	}
-	
+
 //	     *
 //	    **
 //	   ***
 //	  ****
-	
+
 	public static void star5() {
 
 		System.out.println("star5");
@@ -128,10 +129,10 @@ public class starPatterns {
 				System.out.print("*");
 			}
 			System.out.println();
-			
+
 		}
 	}
-	 
+
 //	     *
 //	    **
 //	   ***
@@ -139,7 +140,7 @@ public class starPatterns {
 //	   ***
 //	    **
 //	     *
-	
+
 	public static void star6() {
 
 		System.out.println("star6");
@@ -154,7 +155,7 @@ public class starPatterns {
 				System.out.print("*");
 			}
 			System.out.println();
-			
+
 		}
 		for (int i = 1; i <= 3; i++) {
 
@@ -170,12 +171,12 @@ public class starPatterns {
 
 		}
 	}
-	//pyramid
+	// pyramid
 //	   *
 //	  * *
 //	 * * *
 //	* * * * 
-	
+
 	public static void star7() {
 
 		System.out.println("star7");
@@ -190,10 +191,10 @@ public class starPatterns {
 				System.out.print(" *");
 			}
 			System.out.println();
-			
+
 		}
 	}
-	
+
 //	     *
 //	    ***
 //	   *****
@@ -211,14 +212,14 @@ public class starPatterns {
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
-			for(int k=2;k<=i;k++) {
+			for (int k = 2; k <= i; k++) {
 				System.out.print("*");
 			}
 			System.out.println();
-			
+
 		}
 	}
-	
+
 //	*******
 //	 *****
 //	  ***
@@ -236,14 +237,14 @@ public class starPatterns {
 			for (int j = 4; j >= i; j--) {
 				System.out.print("*");
 			}
-			for(int k=3;k>=i;k--) {
+			for (int k = 3; k >= i; k--) {
 				System.out.print("*");
 			}
 			System.out.println();
-			
+
 		}
 	}
-	
+
 //	* 
 //	 * 
 //	  *
@@ -257,15 +258,15 @@ public class starPatterns {
 
 			for (int k = 1; k <= 5; k++) {
 
-				if(i==k) {
+				if (i == k) {
 					System.out.print("*");
-				}else
+				} else
 					System.out.print(" ");
 			}
 			System.out.println();
 		}
 	}
-	
+
 //	        *
 //	       *
 //	      *
@@ -279,15 +280,15 @@ public class starPatterns {
 
 			for (int j = 1; j <= 5; j++) {
 
-				if(i+j==6) {
+				if (i + j == 6) {
 					System.out.print("*");
-				}else
+				} else
 					System.out.print(" ");
 			}
 			System.out.println();
 		}
 	}
-	
+
 //	*   *
 //	 * * 
 //	  *  
@@ -301,15 +302,15 @@ public class starPatterns {
 
 			for (int j = 1; j <= 5; j++) {
 
-				if(i+j==6 || i==j) {
+				if (i + j == 6 || i == j) {
 					System.out.print("*");
-				}else
+				} else
 					System.out.print(" ");
 			}
 			System.out.println();
 		}
 	}
-	
+
 //	    *
 //	   * *
 //	  *   *
@@ -321,26 +322,26 @@ public class starPatterns {
 
 		for (int i = 1; i <= 5; i++) {
 
-		for(int j=4;j>=i;j--) {
-			System.out.print(" ");
-		}
-		for(int k=1;k<(i*2);k++) {
-			
-			if(k>1 && k<(i*2)-1) {
+			for (int j = 4; j >= i; j--) {
 				System.out.print(" ");
-			}else {
-				System.out.print("*");
 			}
-		}
+			for (int k = 1; k < (i * 2); k++) {
+
+				if (k > 1 && k < (i * 2) - 1) {
+					System.out.print(" ");
+				} else {
+					System.out.print("*");
+				}
+			}
 			System.out.println();
 		}
 	}
-	
+
 //	*     *
 //	 *   *
 //	  * *
 //	   *
-	
+
 	public static void star14() {
 
 		System.out.println("star14");
@@ -352,23 +353,23 @@ public class starPatterns {
 
 			}
 			for (int j = 4; j >= i; j--) {
-				if(j<4) {
-				System.out.print(" ");
-				}else
+				if (j < 4) {
+					System.out.print(" ");
+				} else
 					System.out.print("*");
 			}
-			for(int k=3;k>=i;k--) {
-				if(k>i) {
-				System.out.print(" ");
-				}else {
+			for (int k = 3; k >= i; k--) {
+				if (k > i) {
+					System.out.print(" ");
+				} else {
 					System.out.print("*");
 				}
 			}
 			System.out.println();
-			
+
 		}
 	}
-	
+
 //	*****
 //	*   *
 //	*   *
@@ -382,28 +383,53 @@ public class starPatterns {
 
 			for (int j = 1; j <= 5; j++) {
 
-				if(i==1 || i==5 ||j==1 ||j==5) {
+				if (i == 1 || i == 5 || j == 1 || j == 5) {
 					System.out.print("*");
-				}else
+				} else
 					System.out.print(" ");
 			}
 			System.out.println();
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+//	   *
+//	  ***
+//	 *****
+//	*******
+//	 *****
+//	  ***
+//	   *  
+	public static void diamond() {
+
+		System.out.println("diamond");
+
+		for (int i = 1; i <= 4; i++) {
+
+			for(int k=3;k>=i;k--) {
+				
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			for(int l=2;l<=i;l++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int i = 1; i <= 3; i++) {
+
+			for(int k=1;k<=i;k++) {
+				System.out.print(" ");
+			}
+			for(int j=3;j>=i;j--) {
+				System.out.print("*");
+			}
+			for(int l=2;l>=i;l--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
 }
