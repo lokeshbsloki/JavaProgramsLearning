@@ -12,8 +12,8 @@ public class Interview {
 	}
 
 	//input ar1=2,3,4,5,6
-	//ar2=3,4,5,8
-	//output=2=1,3=2,4=2
+	//      ar2=3,4,5,8
+	//output= 2=1,3=2,4=2
 	public static void interview1() {
 		int arr1[] = { 2, 3, 4, 5, 8, 4 };
 		for(int i=0;i<arr1.length;i++)
